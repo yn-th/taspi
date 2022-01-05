@@ -132,3 +132,46 @@ section #phone {
 .tpbox div:hover {
     color: rgb(75, 75, 75);
 }
+/* .icons img{
+    position: flex;
+    justify-content: space-between;
+ 
+}
+.icons ul  {
+    margin-top: 150px;
+    position: flex;
+
+} */
+.container {
+    width: 1000px;
+    height: auto;
+    margin-right: 250px;
+}
+
+.icons{
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+#servise {
+    margin-top: 250px;
+    font-size: 2em;
+    margin-right: 10px;
+    
+}
+
+.icons img {
+   /* margin: 20px 40px 0 0; */
+    height: 50px; 
+   opacity: 0.5;
+}
+.icons img:hover {
+    opacity: 1;
+}
+.icons a {
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #000;
+}
