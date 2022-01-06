@@ -175,3 +175,48 @@ section #phone {
     font-size: 1.2em;
     color: #000;
 }
+.illu {
+    position: relative;
+}
+.illu img {
+    height: 250px;
+}
+.illu p{
+    
+    font-size: 1.3em;
+    line-height:32px;
+    margin: 20px  0 20px 60px;
+    text-align: justify;
+  
+}
+
+#tp-cc ,
+#tp-ap ,
+#tp-mp ,
+#tp-pp ,
+#tp-tt ,
+#tp-hm ,
+#tp-hk ,
+#tp-tx ,
+#tp-tl {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 2em;
+    
+    
+}
+
+.tp-cc {
+    display: flex; 
+   
+}
+button {
+    outline-style: none;
+    padding: 20px;
+    background-color:orangered;
+    font-size: 1.2em;
+    color: palegoldenrod;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
