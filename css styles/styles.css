@@ -3,145 +3,128 @@
     direction: rtl;
 }
 body{
-
+    box-sizing: border-box;
 }
 header {
+    display: flex;
     height: 4rem;
-    background-color: #000;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    width: 100%;
+    border-bottom: 1px solid gainsboro;
+    z-index: 5;
     
+}
+header .navbar-brand {
+    padding: 20px;
 }
 header ul {
     display: flex;
+    justify-content: space-between;
     font-size: 1.1em;
 }
 header ul li {
     margin: 20px;
+    list-style: none;
 }
 header ul li a {
     text-decoration: none;
-    color: #fff;
+    color: #000;
 }
 header ul li a:hover {
     color:orangered;
 }
-#tapsi{
-    margin-left: 450px; 
+.logo {
+    line-height: 60px;
+    margin-right: 50px;
+    display: inline-block;
 }
-
-#tapsi a:hover{
+#tapsi:hover{
     color: orangered;
 }
 #tapsi a {
-    font-size: 1.9em;
+    font-size: 1.2em;
     line-height:1vw ;
 }
-#line1 {
-    position: absolute;
-    margin-right: 5px;
-    display: inline-block;
-    width: 20px;
-    height: 5px;
-    background-color: orangered;
-}
-#line2 {
-    display: inline-block;
-    margin-right: 5px;
-    width: 25px;
-    height: 5px;
-    background-color: orangered;
-}
-#line1:hover{
-    background-color: #fff;
-}
-#line2:hover{
-    background-color: #fff;
-}
+
 #tapsidl {  
     border-radius: 5px;
     background:orangered;
     padding: 10px 50px 10px 50px;
 }
 #tapsidl:hover {
-    color: black;
+    color: #eee ;
 }
-section {
-    /* position: relative; */
-}
-section  #street{
-    /* position: relative; */
-    max-width: 100%;
 
+#street{
+    max-width: 100%;
+    position: relative;
 }
-section #phone {
+#phone {
     position: absolute;
     left: 150px;
     max-width: 500px;
-    /* max-height: ; */
+    
 }
 .tpbox {
     font-size: 1.5em;
-
-    /* text-indent: 30px; */
     color: white;
     position: absolute;
-    bottom: 160px;
+    top: 20%;
     right: 50px;
     border-radius: 10px;
     width: 500px;
     height: 300px;
     background-color:rgba(18, 11, 48, 0.712);
+    cursor: pointer;
 }
 #bgtp {
     font-size: 2em;
-    padding: 20px;
+    padding-right: 30px;
     
 }
 #tpcomment{
-    padding-right: 20px;
+    padding-right: 30px;
     margin-bottom: 20px;
 }
-.tpbox ul {
+#grid {
     display: grid;
     grid-template-columns: repeat(2, 200px);
     grid-gap: 25px;
-    margin: 0 auto;
 
 }
-.tpbox ul li {
+#grid  li {
     list-style: none;
+    
 }
-.tpbox div {
-   text-align: center;
+#passnger {
+    background-color:   #fff;
     color: black;
-    width: 200px;
     height: 50px;
-    background-color: #fff;
-    line-height: 50px; 
-    border-radius: 15px;
-    border: 2px solid #fff;
-    cursor: pointer;
+    line-height: 50px;
+    width: 220px;
+    text-align: center;
+    border-radius: 10px;
 }
-.tpbox #passnger{
-    
+svg {
+    vertical-align:middle;
 }
-.tpbox #driver {
+
+#driver {
     background-color: transparent;
-    
+    border: 1px solid #fff;
     color: #fff;
+    height: 50px;
+    width: 220px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 10px;
 }
+
 .tpbox div:hover {
     color: rgb(75, 75, 75);
 }
-/* .icons img{
-    position: flex;
-    justify-content: space-between;
- 
-}
-.icons ul  {
-    margin-top: 150px;
-    position: flex;
 
-} */
 .container {
     width: 1000px;
     height: auto;
@@ -162,9 +145,8 @@ section #phone {
 }
 
 .icons img {
-   /* margin: 20px 40px 0 0; */
     height: 50px; 
-   opacity: 0.5;
+    opacity: 0.5;
 }
 .icons img:hover {
     opacity: 1;
@@ -208,15 +190,211 @@ section #phone {
 
 .tp-cc {
     display: flex; 
-   
 }
-button {
-    outline-style: none;
+.btn {
+    display: inline-block;
+
     padding: 20px;
     background-color:orangered;
     font-size: 1.2em;
     color: palegoldenrod;
     border-radius: 10px;
-    border: none;
+    width: 200px;
+    text-align: center;
     cursor: pointer;
 }
+.btn:hover {
+    background-color: rgb(255, 93, 34);
+    
+} 
+.tehran  {
+    display: flex;
+    background-image: url(../images/parallax.jpeg);
+    background-size: 100% 100%;
+    background-attachment:fixed ;
+}
+.title{
+    display: inline-block;
+    text-align: center;
+    font-size: 1.3em;
+    line-height: 150px;
+    color: whitesmoke;
+    margin-right: 100px;
+    
+}
+.divar {
+    display: inline-block;
+    width: 2px;
+    height: 50px;
+    background-color: #000;
+    margin-top: 55px;
+    margin-right: 55px;
+}
+.sub-title {
+    display: none;
+}
+.driver {
+    width: 1000px;
+    position: relative;
+    text-align:justify;
+    right: 100px;
+    color: rgb(77, 77, 77);
+}
+.driver h1 {
+    color: black;
+}
+.driver p , pre {
+    font-size: 1.5em;
+    
+}
+.dr {
+    
+    width: 500px;
+    margin-top: 30px;
+}
+.dr-tp {
+    text-decoration: none;
+    color: blue;
+}
+.driver img {
+    position: absolute;
+    left:-150px;
+    top: 0;
+    border-radius: 20px;
+    width: 500px;
+
+}
+
+.tapsi-dl ,.sing-in  {
+    background-color: rgb(36, 36, 255);
+    height: 50px;
+    margin-right: 100px;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 10px;
+    color: whitesmoke;
+}
+.weblog img {
+    width: 300px;
+    border-radius: 12px;
+    
+}
+.weblog {
+    margin: 100px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.p-subject {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: gray;
+    width: 300px;
+}
+.p-content {
+    width: 300px;
+    font-size: 1.2em;
+    height: 67px; 
+    text-align: justify;
+    word-break:keep-all;
+    overflow: hidden;
+    
+}
+.shadow {
+    padding: 20px;
+    width: 300px;
+}
+.shadow:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0,0.2);
+}
+.iran {
+    position: relative;
+ 
+}
+.iran-city {
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(8,80px);
+    grid-gap: 70px;
+    inset: 0;
+    margin-top: 80px;
+}
+.iran-city li {
+    font-size: 1.5em;
+    list-style: none;
+}
+.iran img {
+    width: 100%;
+}
+.tp-ir {
+    display: inline-block;
+    margin-right: 40px;
+    font-size: 3em;
+}
+footer {
+    background-color: #000;
+    height: 600px;
+    color: #fff;
+    
+}
+.footer-container {
+    padding: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    
+}
+.brandcol {
+    font-size: 1.2em;
+    width: 200px;
+}
+.brandcol , h3 , p {
+    margin-top: 20px;
+}
+.footercol{
+  margin-right: 100px;
+  font-size: 1.1em;
+
+}
+footer h6 {
+    color: wheat;
+    font-size: 2em;
+}
+.link {
+    display: flex;
+    margin-top: 20px;
+    
+    flex-direction: column ;
+    align-items: flex-start;
+}
+.copy-right {
+    color: gray;
+}
+.namad {
+    margin-right: 100px;
+    margin-top: -80px;
+   
+}
+.namad a{
+    display: inline-block;
+    background-color: palegoldenrod;
+    height: 150px;
+    border-radius: 20px;
+}
+.social-text {
+    padding-right: 100px;
+    font-size: 1.3em;
+    
+}
+.social-media {
+    margin-top: 10px;
+    padding-right:100px ;
+}
+.social-media svg{
+    padding-left: 25px;
+}
+
+path:hover {
+  fill: orangered;
+}
+
